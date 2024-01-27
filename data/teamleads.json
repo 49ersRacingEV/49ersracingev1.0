@@ -1,0 +1,90 @@
+[
+   {
+     "name": "Greg Wycoff",
+     "position": "Technical Team Lead",
+     "major": "Mechanical Enginering",
+     "image": "../images/portraits/gregwycoffsquare.png",
+     "link": "https://www.linkedin.com/in/greg-wycoff",
+     "id": 1
+   },
+   {
+      "name": "Lucas Gorman",
+      "position": "Non-technical Team Lead",
+      "major": "Marketing",
+      "image": "../images/portraits/lucasgormansquare.jpg",
+      "link": "",
+      "id": 11
+   },
+   {
+     "name": "Hunter Ball",
+     "position": "Powertrain Lead",
+     "major": "Mechanical Enginering",
+     "image": "../images/portraits/hunterballsquare.jpg",
+     "link": "https://www.linkedin.com/in/hunterjball",
+     "id": 2
+   },
+   {
+      "name": "Vinny Cagno",
+      "position": "Chassis Lead",
+      "major": "Mechanical Enginering",
+      "image": "../images/portraits/vinnycagnoportrait.jpeg",
+      "link": "https://www.linkedin.com/in/vincent-cagno-8a4a36224/",
+      "id": 3
+   },
+   {
+      "name": "Donovan Godfrey",
+      "position": "Aerodynamics Lead",
+      "major": "Mechanical Enginering",
+      "image": "../images/portraits/donovangodfreysquare.jpeg",
+      "link": "https://www.linkedin.com/in/donovan-godfrey/",
+      "id": 4
+   },
+   {
+      "name": "Ryan Brancheau",
+      "position": "Vehicle Dynamics Lead",
+      "major": "Mechanical Enginering",
+      "image": "../images/portraits/ryanbrancheauportrait.jpeg",
+      "link": "https://www.linkedin.com/in/ryan-brancheau-9912b0254/",
+      "id": 5
+   },
+   {
+      "name": "Charlie Rodgers",
+      "position": "Ergonomics Lead",
+      "major": "Mechanical Enginering",
+      "image": "../images/portraits/charlierodgersportrait.jpg",
+      "link": "https://www.linkedin.com/in/charlesrogers001/",
+      "id": 6
+   },
+   {
+      "name": "Owen Elrod",
+      "position": "Accumulator Lead",
+      "major": "Mechanical Enginering",
+      "image": "../images/portraits/owenelrodsquare.jpeg",
+      "link": "",
+      "id": 7
+   },
+   {
+      "name": "Matthew Shaffer",
+      "position": "High Voltage Lead",
+      "major": "Mechanical Enginering",
+      "image": "../images/portraits/matthewshaffersquare.jpg",
+      "link": "https://www.linkedin.com/in/matthew-shaffer-68b7b4200/",
+      "id": 8
+   },
+   {
+      "name": "Coltrane Nevruz",
+      "position": "Outreach Co-Lead",
+      "major": "Mechanical Enginering",
+      "image": "../images/portraits/coltranenevruzsquare.jpg",
+      "link": "",
+      "id": 9
+   },
+   {
+      "name": "Adam Bartholomew",
+      "position": "Brakes Lead",
+      "major": "Undecided",
+      "image": "../images/portraits/adambartholomewsquare.jpg",
+      "link": "",
+      "id": 10
+   }
+]

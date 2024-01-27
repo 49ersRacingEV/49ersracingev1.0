@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Kulwicki",
+        "tier": "gold",
+        "image": "../images/sponsors/kulwicki.png",
+        "link": "https://motorsports.charlotte.edu/"
+    },
+    {
+        "name": "Motec",
+        "tier": "gold",
+        "image": "../images/sponsors/motec.png",
+        "link": "https://www.motec.com.au/home"
+    },
+    {
+        "name": "SKF",
+        "tier": "green",
+        "image": "../images/sponsors/SKF.jpg",
+        "link": "https://www.skf.com/us"
+    },
+    {
+        "name": "Kenesto",
+        "tier": "green",
+        "image": "../images/sponsors/kenesto.jpg",
+        "link": "https://www.kenesto.com/"
+    },
+    {
+        "name": "bmrs",
+        "tier": "green",
+        "image": "../images/sponsors/bmrs.jpg",
+        "link": "https://www.bmrs.net/"
+    },
+    {
+        "name": "amprevolt",
+        "tier": "black",
+        "image": "../images/sponsors/amprevolt.jpg",
+        "link": "https://amprevolt.com/"
+    },
+    {
+        "name": "stockcarsteel",
+        "tier": "black",
+        "image": "../images/sponsors/SSC.jpg",
+        "link": "https://www.stockcarsteel.com/"
+    },
+    {
+        "name": "FKrodends",
+        "tier": "black",
+        "image": "../images/sponsors/fk.jpg",
+        "link": "https://www.fkrodends.com/"
+    },
+    {
+        "name": "MillerElectric",
+        "tier": "black",
+        "image": "../images/sponsors/millerelectric.png",
+        "link": "https://www.millerwelds.com/"
+    },
+    {
+        "name": "Safety-Kleen",
+        "tier": "black",
+        "image": "../images/sponsors/safety-kleen.png",
+        "link": "https://www.safety-kleen.com/about-us/motorsports"
+    }
+]

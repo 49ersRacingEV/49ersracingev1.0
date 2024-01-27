@@ -1,0 +1,735 @@
+:root {
+    --clr-base: #FFFFFF;
+    --clr-gray: #686868;
+    --clr-primary: #181414;
+    --clr-secondary: #A49665;
+    --clr-secondary-dull: #a4966500;
+    --clr-accent: #005035;
+    --contentwidth: 950px;
+    --contentwidth2: 625px;
+    --contentwidth3: 300px;
+    --header-height: 105.48px;
+    --header-height-negative: -105.48px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: verdana, sans-serif;
+}
+
+/* Hide the unfinished car tech page */
+#navigation li:nth-child(4) {
+    display: none;
+}
+
+#mobile-nav a:nth-child(4) {
+    display: none;
+}
+
+/* General Styles */
+main {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+#no-pad {
+    padding-top: 0;
+}
+
+hr {
+    border: none;
+    border-bottom: 2px solid var(--clr-base);
+    text-align: center;
+    width: var(--contentwidth);
+    margin: 20px auto;
+    margin-bottom: 20px;
+}
+
+::selection {
+    background: var(--clr-primary);
+    color: var(--clr-base);
+  }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* header ::selection {
+    background: transparent;
+    color: inherit;
+} */
+
+body {
+    background-color: var(--clr-primary);
+    min-height: 100vh;
+}
+
+button, a {
+    font: inherit;
+    border: none;
+    background-color: transparent;
+}
+
+a.btn {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: var(--clr-accent);
+    color: white;
+    padding: 0.5em 3em;
+    border: 3px solid transparent;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.btn:hover, .accent-btn:active {
+    background-color: #fff;
+    color: var(--clr-accent);
+    border-color: var(--clr-accent);
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.selected {
+    background-color: var(--clr-accent);
+}
+
+.content {
+    width: var(--contentwidth);
+}
+
+.sectiontitle {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sectiontitle h3 {
+    font-size: 35px;
+    font-style: oblique;
+    color: var(--clr-base);
+    margin-top: 50px;
+}
+
+/* Styles for header and nav */
+header {
+    position: static;
+    top: 0;
+    height: var(--header-height);
+    z-index:1000;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    background-color: var(--clr-secondary);
+    transition: top 0.05s ease-in-out;
+}
+
+header img {
+    padding: 1em;
+    width: 400px;
+    height: auto;
+}
+
+/* .nav-up {
+    top: var(--header-height-negative);
+} */
+
+#navigation {
+    display: flex;
+    justify-content: end;
+}
+
+#navigation ul {
+    column-gap: 0px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navigation ul li {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4em;
+    font-weight: 800;
+}
+ 
+.navlink {
+    color: var(--clr-primary);
+    text-decoration: none;
+    padding: 1.84em 1em;
+    border: 5px solid transparent;
+    border-bottom: 0px;
+    border-top: 0px;
+    /* text-shadow: 1px 1px 2px var(--clr-primary); */
+}
+
+.navlink:hover {
+    background-color: var(--clr-primary);
+    color: var(--clr-base);
+    border: 5px solid var(--clr-accent);
+    border-bottom: 0px;
+    border-top: 0px;
+    text-shadow: 2px 2px var(--clr-accent),
+                 1px 1px var(--clr-accent);
+    position: relative;
+    top: -2px;
+    transition: .5s;
+}
+
+#banner {
+    width: 100%;
+    height: auto;
+    opacity: 50%;
+}
+
+.textonimage {
+    position: relative;
+    text-align: center;
+    color: var(--clr-base);
+}
+
+/* absolute center */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    line-height: 1.7em;
+    text-wrap: nowrap;
+    
+}
+
+.center {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.topsponsors {
+    padding: 100px 0;
+    /* background: linear-gradient(var(--clr-primary), var(--clr-secondary-dull) 55%, var(--clr-primary)); */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-content: center;
+    column-gap: 2.5rem;
+    margin: 0 3.2rem;
+}
+
+.whitesponsor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* fixing size of sponsor logos */
+/* might go to this later to make the page more responsibe/clean */
+/* .whitesponsor img {
+    max-height: 100px;
+    width: auto;
+}
+#whitekulwicki img {
+    max-height: 200px;
+}
+#whitemotec img {
+    max-height: 110px;
+}
+#whitekenesto img {
+    max-height: 105px;
+}
+#whiteskf img {
+    max-height: 75px;
+} */
+
+@keyframes slideFromCenter {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* transform: scale(1.2)  translateX(-14.5em); */
+        transform:   translateX(-50%);
+    }
+}
+
+.pagetitle {
+    width: var(--contentwidth);
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem auto;
+    /* margin-top: 3.2rem; */
+    align-items: center;
+    animation: .3s ease-out 0s 1 slideFromCenter;
+    transform: translateX(-50%);
+}
+
+.pagetitle h3 {
+    font-size: 30px;
+}
+
+/* selects all direct children of .pagetitle, this moves the left
+side of the text to the origin of the divison so the animation lines up properly
+no matter the size of the text or anything*/
+.pagetitle > * {
+    color: var(--clr-base);
+    transform: translate(50%);
+}
+
+.pagetitle img {
+    margin-top: 2.5rem;
+    border-radius: 8px;
+}
+
+.pagetitle .btn {
+    transform: translateX(calc(.5 * var(--contentwidth)));
+}
+
+@media screen and (min-width: 976px) and (max-width: 1268px) {
+    
+    header {
+        height: 78.82px;
+    }
+
+    .pagetitle {
+        width: var(--contentwidth2);
+    }
+
+    .pagetitle .btn {
+        transform: translateX(calc(.5 * var(--contentwidth2)));
+    }
+
+    hr {
+        width: var(--contentwidth2);
+    }
+
+    .content {
+        width: var(--contentwidth2);
+    }
+
+    main {
+        padding-top: 78.81px;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.card {
+    border-radius: 5px;
+    background-color: var(--clr-base);
+    box-shadow: 0 5px 10px 0;
+}
+
+.card img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.teamcard {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+/* Styles for blogupdates page */
+.carousel-wrapper {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+    justify-content: center;
+}
+
+.carousel-btn {
+    width: 75px;
+    background-color: var(--clr-gray);
+    font-size: 150%;
+    border-radius: 15px;
+}
+
+.carousel-btn:hover {
+    cursor: pointer;
+}
+
+#carousel-container {
+    display: grid;
+    grid-template-columns: 325px 325px 325px;
+    justify-content: center;
+    column-gap: 25px;
+    list-style: none;
+}
+
+.carousel-item {
+    width: 325px;
+}
+
+@media screen and (min-width: 976px) and (max-width: 1268px) {
+    #carousel-container {
+        grid-template-columns: 325px 325px;
+        column-gap: 40px;
+    } 
+}
+
+/* Styles for the car page */
+.collage-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 50px;
+    margin-top: 70px;
+}
+
+.collage-container div img{
+    max-width: 600px;
+}
+
+#first-img {
+    max-width: 1200px;
+}
+
+/* Styles for current sponsor page */
+.currentsponsors {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.currentsponsors h1 {
+    text-align: center;
+    font-style: oblique;
+    font-size: 50px;
+}
+
+.currentsponsors .gold {
+    color: var(--clr-secondary);
+}
+
+.currentsponsors .green {
+    color: var(--clr-accent);
+}
+
+.currentsponsors .black {
+    color: var(--clr-primary);
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
+.currentsponsors hr {
+    width: 95%; 
+    text-align: center;
+    margin: 20px auto;
+}
+
+.sponsorwrapper {
+    width: 100%;
+    background-color: white;
+}
+
+.sponsorcollection {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.sponsoranc {
+    flex: 1 1 1;
+    width: 300px;
+    margin: auto;
+}
+
+.sponsoranc img {
+    width: 300px;
+    display: block;
+}
+
+/* Styles for ContactUs page */
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+    justify-content: center;
+    align-items: center;
+}
+
+.socials-container {
+    padding-top: 1.4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.socials-container a {
+    text-decoration: none;
+}
+
+.socials-container div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0.45em 0.45em;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: none;
+    background: var(--clr-secondary);
+    color: white;
+    border-radius: 25px;
+    border: 3px solid transparent;
+}
+
+.socials-container p {
+    font-size: 30px;
+    color: white;
+}
+
+.socials-container div:hover {
+    background-color: var(--clr-primary);
+    border-color: var(--clr-secondary);
+    transition: .2s;
+}
+
+#contact-main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#contact-main p {
+    font-size: 24px;
+    font-weight: 800;
+    padding-bottom: 15px;
+}
+
+#contact-main a {
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+    padding: .6em;
+    background-color: var(--clr-secondary);
+    border-radius: 10px;
+    border: 3px solid transparent;
+}
+
+#contact-main a:hover {
+    background-color: var(--clr-primary);
+    border-color: var(--clr-secondary);
+    transition: .2s;
+    text-decoration: none;
+}
+
+.donate {
+    margin: 3.2rem 0;
+    margin-top: 2rem;
+}
+
+a.donate {
+    font-size: 24px;
+    border-radius: 8px;
+    line-height: 2.5rem;
+}
+
+/* Styles for footer */
+footer {
+    position: static;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 170px;
+    background-color: var(--clr-secondary);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+#sponsorfooter {
+    margin-top: 80px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#contact p {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+#contact a {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--clr-base);
+    background-color: var(--clr-primary);
+    border-radius: 10px;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    border-radius: 15px;
+    transition: .5s;
+}
+
+#socials {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#socials a i {
+    padding: .4em .45em;
+    font-size: 29px;
+    text-decoration: none;
+    background: var(--clr-accent);
+    color: white;
+    border-radius: 30%;
+    box-shadow: 2px 2px 2px var(--clr-primary);
+}
+
+#socials a i:hover {
+    border-radius: 50%;
+    transition: .1s;
+}
+
+@media screen and (min-width: 976px) and (max-width: 1268px) {
+    header img {
+        width: 250px;
+        height: auto;
+    }
+
+    #navigation ul li {
+        font-size: 1.2em;
+    }
+
+    .navlink {
+        padding: 1.5em 1em;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .textonimage {
+        margin-top: 78.82px;
+    }
+
+    .centered {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 976px) {
+    .container {
+        display: grid;
+        grid-template-columns: 300px;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}
+
+/* MOBILE VIEW */
+.checkbtn {
+    font-size: 42px;
+    color: var(--clr-primary);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+#mobile-nav {
+    display: none;
+    z-index: 1000;
+    background-color: var(--clr-secondary);
+    color: var(--clr-primary);
+    position: absolute;
+    left: 0;
+    top: var(--header-height);
+    width: 100vw;
+    justify-content: center;
+}
+
+#mobile-nav-container {
+    width: 100vw;
+    flex-direction: column;
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+    border-bottom: 5px solid var(--clr-primary);
+}
+
+.mobile-navlink {
+    color: var(--clr-primary);
+    text-decoration: none;
+    border-top: 1px solid var(--clr-primary);
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 976px) {
+
+    /* Big Nav */
+    #navigation ul {
+        display: none;
+    }
+
+    /* Mobile Nav */
+    .checkbtn {
+        display: block;
+    }
+
+    #mobile-nav-container {
+        display: flex;
+    }
+
+    #check:checked ~ #mobile-nav { 
+        display: flex;
+    }
+}
